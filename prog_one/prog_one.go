@@ -11,7 +11,6 @@ func power(n int, P int) {
 
 func power_h(n int, p int, res int) {
 	if p == 1 {
-		res = res * n
 		fmt.Printf("This is the result %d \n", res)
 	} else {
 		res = res * n
@@ -21,7 +20,7 @@ func power_h(n int, p int, res int) {
 
 func main() {
 	n := 127
-	p := 3
+	p := 12
 
 	// start a process
 	go power(n, p)

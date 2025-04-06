@@ -8,13 +8,14 @@ import (
 var res int
 
 func power(n int, p int) {
-	res = res * n
+	current_res := res
+	res = current_res * n
 }
 
 func main() {
 	n := 127
-	p := 3
-	res := 1
+	p := 12
+	res = 1
 
 	// start a process
 	for i := 0; i < p; i++ {
